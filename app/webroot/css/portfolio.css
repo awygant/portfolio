@@ -53,6 +53,16 @@ h4{
     font-weight:500;
 }
 
+a{
+    text-decoration:none;
+    color:#E55041;
+    transition: opacity 0.3s;
+}
+
+a:hover{
+    opacity:0.5;
+}
+
 .contentWrap{
     background-color:#fff;
     color:#1D172D;
@@ -292,7 +302,7 @@ h4{
 
 .btn{
     background-color:#1D172D;
-    color:#fff;
+    color:#fff !important;
     height:50px;
     line-height:50px;
     padding:0 15px;

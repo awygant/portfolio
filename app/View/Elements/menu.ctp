@@ -1,9 +1,19 @@
+<?php echo $this->Html->script('hammer.min.js'); ?>
 <script>
     $(function() {
         $('#menuButton').on('click', function() {
             $('#menu').toggleClass('slideLeft');
             $('.container').toggleClass('slideLeft');
         });
+    });
+    var mc = new Hammer(document.body);
+    mc.on("swipeleft", function() {
+        if(!$('#menu').hasClass("slideLeft"))
+            $('#menuButton').click();
+    });
+    mc.on("swiperight", function() {
+        if($('#menu').hasClass("slideLeft"))
+            $('#menuButton').trigger('click');
     });
 </script>
 
