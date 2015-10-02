@@ -27,6 +27,26 @@
 
 
 <?php // TODO: Make portfolio-item an element, move all this stuff to a database? ?>
+
+
+<div class = "portfolio-item">
+    <div class = "left-column">
+        <?php echo $this->Html->Image('projects/speedsters/speedsters-tilt.png'); ?>
+    </div>
+    <div class = "right-column">
+        <h2>Speedsters Snack Promo</h2>
+        <p>Task: Distribute the all-new Speedsters snack brand among its target audience and generate social media buzz.</p>
+        <p>Result: Using the Flashfoto Image API, developed a custom branded application that allows users to picture themselves driving a sports car. When a user uploads a photo, the app automatically extracts the face and hair of its subject and places him or her in a fantasy driving scene.</p>
+        <p>The app keeps track of each photo's share numbers, so the photo with the highest virality is rewarded at the end of the contest.</p>
+        <?php
+        echo $this->Html->link('View Demo', 'http://speedsters.annawygant.com', array(
+            'class'=>'btn',
+            'target' => '_blank'
+        ));
+        ?>
+    </div>
+</div>
+
 <div class = "portfolio-item">
     <div class = "left-column">
         <?php echo $this->Html->Image('projects/ltdn-site/ltdn-tilt.png'); ?>
@@ -124,24 +144,6 @@
 
 </div>
 
-
-<div class = "portfolio-item">
-    <div class = "left-column">
-        <?php echo $this->Html->Image('projects/speedsters/speedsters-tilt.png'); ?>
-    </div>
-    <div class = "right-column">
-        <h2>Speedsters Snack Promo</h2>
-        <p>Task: Distribute the all-new Speedsters snack brand among its target audience and generate social media buzz.</p>
-        <p>Result: Using the Flashfoto Image API, developed a custom branded application that allows users to picture themselves driving a sports car. When a user uploads a photo, the app automatically extracts the face and hair of its subject and places him or her in a fantasy driving scene.</p>
-        <p>The app keeps track of each photo's share numbers, so the photo with the highest virality is rewarded at the end of the contest.</p>
-        <?php
-        echo $this->Html->link('View Demo', 'http://speedsters.annawygant.com', array(
-            'class'=>'btn',
-            'target' => '_blank'
-        ));
-        ?>
-    </div>
-</div>
 
 <div class = "portfolio-item">
     <div class = "left-column">
