@@ -1,7 +1,12 @@
 <div class = "contact">
-    <div class = "content">
+    <div class = "content text-center">
         <h2>Contact</h2>
+        <?php echo $this->Html->link('anna.wygant@gmail.com', 'mailto:anna.wygant@gmail.com', array('class' => 'btn'));
+        echo $this->Html->link('+1 (408) 355-3815', 'tel:+14083553815', array('class' => 'btn')); ?>
+        <p><?php echo $this->Html->Image('github.png', array('url'=>'https://github.com/doodleygroover', 'target' => '_blank'));?></p>
         <?php
+        // Save this awesome form for a real server that apache mail things
+        /*
         echo $this->Form->create('Mail', array(
             'action' => 'send'
         ));
@@ -10,6 +15,7 @@
         echo $this->Form->input('message', array('type' => 'textarea', 'required' => 'true'));
         echo $this->Form->submit('Send');
         echo $this->Form->end();
+        */
         ?>
     </div>
 </div>

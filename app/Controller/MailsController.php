@@ -16,18 +16,12 @@ class MailsController extends AppController{
 
         $this->layout = 'page';
 
-        // TODO: validate email address
 
         if ($this->request->is('post')) {
             $name = $this->request->data['Mail']['name'];
             $email = $this->request->data['Mail']['email'];
             $msg = $this->request->data['Mail']['message'];
 
-            $this->set(compact('name'));
-            $this->set(compact('email'));
-            $this->set(compact('msg'));
-
-            // TODO: figure out how to implement custom.php
             $Email = new CakeEmail();
             $Email->from(array($email => $name));
             $Email->to('anna.wygant@gmail.com');
