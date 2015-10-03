@@ -309,6 +309,7 @@ a:hover{
     display:inline-block;
     text-decoration:none;
     transition: opacity 0.5s;
+    margin-right:1px;
 }
 
 .btn:hover{
@@ -377,7 +378,7 @@ a:hover{
 
 #lightbox{
     display:none;
-    background-color:rgba(255,255,255,0.95);
+    background-color:#fff;
     position:fixed;
     top:0;
     left:0;
@@ -403,4 +404,20 @@ a:hover{
 .irrelevantBtn{
     color:#fff;
     background-color:#fdfdfd;
+}
+
+.info{
+    color:#E55041;
+}
+
+.infoGlyph{
+    background-image:url('../img/info.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom center;
+    padding-top:3px;
+    height:15px;
+    width:15px;
+    display:inline-block;
+    margin-right:10px;
 }

@@ -1,5 +1,9 @@
 <script type = "text/javascript">
     $(document).ready(function(){
+
+        var lightbox = $("#lightbox");
+        var lightboxImg = $("#lightboxImg");
+
         $('.galleryExpand').click(function(){
             $(this).parent().next('.gallery').slideToggle();
             if($(this).html() == 'See Gallery'){
@@ -11,15 +15,23 @@
         });
         $('.card').click(function(){
             i = $(this).find('img');
-            $('#lightboxImg').attr('src', i.attr('src'));
-            $('#lightbox').fadeIn('fast');
-            $('body').css('overflow', 'hidden');
+            lightboxOpen(i.attr('src'));
         });
-        $('#lightbox').click(function(){
+        $('.portfolio-item img').click(function(){
+            if(!$(lightbox).is(':visible')){
+                lightboxOpen($(this).attr('src'));
+            }
+        });
+        $(lightbox).click(function(){
             $('body').css('overflow', 'auto');
-            $('#lightboxImg').attr('src', '');
+            $(lightboxImg).attr('src', '');
             $(this).fadeOut('fast');
         });
+        function lightboxOpen(imgsrc){
+            $(lightboxImg).attr('src', imgsrc);
+            $(lightbox).fadeIn('fast');
+            $('body').css('overflow', 'hidden');
+        }
     });
 </script>
 
@@ -39,11 +51,54 @@
         <p>Result: Using the Flashfoto Image API, developed a custom branded application that allows users to picture themselves driving a sports car. When a user uploads a photo, the app automatically extracts the face and hair of its subject and places him or her in a fantasy driving scene.</p>
         <p>The app keeps track of each photo's share numbers, so the photo with the highest virality is rewarded at the end of the contest.</p>
         <?php
-        echo $this->Html->link('View Demo', 'http://speedsters.annawygant.com', array(
+         echo $this->Html->link('See Demo', 'http://staging-voting-1.fotam.com/', array(
             'class'=>'btn',
             'target' => '_blank'
         ));
+        echo $this->Html->link('See Gallery', 'javascript:;', array(
+            'class'=>'btn galleryExpand'
+        ));
         ?>
+    </div>
+    <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/speedsters/upload.jpg');?>
+            </div>
+            <div class = "desc">
+                <h4>Upload Interface</h4>
+                <p>This app implements several methods from Flashfoto's API, starting with a photo upload.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/speedsters/results.jpg');?>
+            </div>
+            <div class = "desc">
+                <h4>Automatic Photo Creations</h4>
+                <p>The API extracts the user's face and hair from the photo. The app uses this data and places the head into fun racing scenes pulled from an external database.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/speedsters/view.jpg');?>
+            </div>
+            <div class = "desc">
+                <h4>Incentivized Sharing</h4>
+                <p>Once the user picks their favorite photo, he or she can share to Facebook to enter the sweepstakes.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/speedsters/leaderboard.jpg');?>
+            </div>
+            <div class = "desc">
+                <h4>It's a Race to the Top!</h4>
+                <p>The leaderboard shows the top ten leaders in the photo sharing contest.</p>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -63,6 +118,7 @@
         ?>
     </div>
     <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
                 <?php echo $this->Html->Image('projects/ltdn-site/design-1.jpg');?>
@@ -99,6 +155,7 @@
         ?>
     </div>
     <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <?php //TODO: Put card blocks into an element ?>
         <div class = "card">
             <div class = "imgContainer">
@@ -160,6 +217,7 @@
         ?>
     </div>
     <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
                 <?php echo $this->Html->Image('projects/tiger/line-art.jpg');?>
@@ -207,6 +265,7 @@
         ?>
     </div>
     <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
                 <?php echo $this->Html->Image('projects/fotam/fotam-tshirt.jpg');?>
@@ -222,7 +281,7 @@
 
 <div id = "lightbox">
     <div style = "position:static">
-        <p>Tap anywhere to close.</p>
+        <p class = "info"><span class = "infoGlyph"></span>Tap anywhere to close.</p>
         <img id = "lightboxImg"/>
     </div>
 </div>
