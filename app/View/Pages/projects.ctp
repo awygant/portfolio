@@ -159,7 +159,7 @@
         <?php //TODO: Put card blocks into an element ?>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ff-labs/large/logo.png');?>
+                <?php echo $this->Html->Image('projects/ff-labs/large/ff-logo.png');?>
             </div>
             <div class = "desc">
                 <h4>Logo</h4>
