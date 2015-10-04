@@ -36,6 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<?php echo $this->element('google_analytics'); ?>
 <?php echo $this->element('menu'); ?>
 	<div class="fullHeightContainer">
         <?php echo $this->Session->flash(); ?>
