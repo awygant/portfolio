@@ -2,12 +2,6 @@
 <div class = "text-center"><?php echo $this->Html->link('Download PDF', array('action' => 'download'), array('class' => 'btn')); ?></div>
 <div class = "left-half">
     <h3>Professional Experience</h3>
-
-    <h4>Web Design Intern, Flashfoto, Inc.</h4>
-    <p>June 2012 - December 2012. Los Gatos, CA</p>
-    <p>Duties & Responsibilities: Revamped user-facing application with updated designs. Provided infographics detailing Flashfoto’s influence on social media campaigns. Wrote batch processing scripts for photos uploaded during entertainment industry campaigns.</p>
-    <p>Skills: Adobe Creative Suite, Photoshop Scripting</p>
-
     <h4>Creative Developer, Flashfoto, Inc.</h4>
     <p>January 2013 - September 2015. Los Gatos, CA</p>
     <p>Duties & Responsibilities: Designed, developed, and maintained user-facing online assets. Was responsible for conception, interface design, graphic design, front-end and partial back-end programming.</p>
@@ -15,10 +9,15 @@
     <p>Wrote live-updating crowdsourced slideshow software and installed it internationally at large events, including online and offline environments.</p>
     <p>Contributed to a one-on-one photo-personalized ad network, the first of its kind.</p>
     <p>Gained experience in social media advertising and analysis in automotive and latin entertainment industries.</p>
+    <p>Wrote reporting programs to parse application log files and delivered detailed, graphic reports to clients.</p>
     <p>Represented Flashfoto at industry conferences and expos to create meaningful B2B relations.</p>
     <p>Assisted with cloud server configuration and maintenance.</p>
     <p>Programmed team-building events and activities.</p>
     <p>Skills: Adobe Creative Suite, HTML5, CSS3, Javascript, PHP, MySQL, CakePHP, Responsive Web Design, Facebook Ads</p>
+    <h4>Web Design Intern, Flashfoto, Inc.</h4>
+    <p>June 2012 - December 2012. Los Gatos, CA</p>
+    <p>Duties & Responsibilities: Revamped user-facing application with updated designs. Provided infographics detailing Flashfoto’s influence on social media campaigns. Wrote batch processing scripts for photos uploaded during entertainment industry campaigns.</p>
+    <p>Skills: Adobe Creative Suite, Photoshop Scripting</p>
 </div>
 
 <div class = "right-half">
