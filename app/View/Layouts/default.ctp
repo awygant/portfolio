@@ -38,6 +38,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 <?php echo $this->element('google_analytics'); ?>
 <?php echo $this->element('menu'); ?>
+
 	<div class="fullHeightContainer">
         <?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>

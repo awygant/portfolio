@@ -39,7 +39,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <?php echo $this->element('google_analytics'); ?>
 <?php echo $this->element('menu'); ?>
     <div class = "container">
-        <div class = "topLogo"></div>
+        <?php
+        echo $this->Html->link('<div class = "topLogo"></div>', '/', array('escape' => false));
+        ?>
         <div class = "tagline">Anna Michele Wygant</div>
         <div class = "contentWrap">
             <div class = "content">

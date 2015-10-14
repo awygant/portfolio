@@ -43,7 +43,7 @@
 
 <div class = "portfolio-item">
     <div class = "left-column">
-        <?php echo $this->Html->Image('projects/speedsters/speedsters-tilt.png'); ?>
+        <?php echo $this->Html->Image('projects/speedsters/speedsters-tilt.png', array('alt' => 'Speedsters Ultimate Racer')); ?>
     </div>
     <div class = "right-column">
         <h2>Speedsters Snack Promo</h2>
@@ -64,7 +64,7 @@
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/upload.jpg');?>
+                <?php echo $this->Html->Image('projects/speedsters/upload.jpg', array('alt' => 'Speedsters Ultimate Racer - Upload'));?>
             </div>
             <div class = "desc">
                 <h4>Upload Interface</h4>
@@ -73,7 +73,7 @@
         </div>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/results.jpg');?>
+                <?php echo $this->Html->Image('projects/speedsters/results.jpg', array('alt' => 'Speedsters Ultimate Racer - Photo Results'));?>
             </div>
             <div class = "desc">
                 <h4>Automatic Photo Creations</h4>
@@ -82,7 +82,7 @@
         </div>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/view.jpg');?>
+                <?php echo $this->Html->Image('projects/speedsters/view.jpg', array('alt' => 'Speedsters Ultimate Racer - View Photo Creation'));?>
             </div>
             <div class = "desc">
                 <h4>Incentivized Sharing</h4>
@@ -91,7 +91,7 @@
         </div>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/leaderboard.jpg');?>
+                <?php echo $this->Html->Image('projects/speedsters/leaderboard.jpg', array('alt' => 'Speedsters Ultimate Racer - Leaderboard'));?>
             </div>
             <div class = "desc">
                 <h4>It's a Race to the Top!</h4>
@@ -102,15 +102,20 @@
     </div>
 </div>
 
+
+
+
 <div class = "portfolio-item">
     <div class = "left-column">
-        <?php echo $this->Html->Image('projects/ltdn-site/ltdn-tilt.png'); ?>
+        <?php echo $this->Html->Image('projects/reporting/reporting-tilt.png', array('alt' => 'From Log Files to Beautiful Reports')); ?>
     </div>
     <div class = "right-column">
-        <h2>Los Tigres del Norte Band Site</h2>
-        <p>Task: Design a fresh, responsive website that includes the all-new Jefe de Jefes logo. Follow content guidelines to ensure compatibility with a pre-existing CMS.</p>
-        <p>Result: Delivered two unique designs for the band to choose from. The first is bold and modern, consisting of new-age typography including a hashtag cloud and vibrant gradient art. The second gives off a more traditional feel with vintage looks, real-life textures, and a natural color scheme.</p>
-        <p>This iconic latin band went with the latter option that represents the group's timelessness and universal appeal.</p>
+        <h2>Log Scraping and Reporting</h2>
+        <p>Task: Parse thousands of lines of log data and deliver readable app usage insights to the client.</p>
+        <p>Result: I wrote a parser in Java that accepts a monthly log file and a partner ID as parameters, and outputs data about that specific partner. </p>
+        <p>The application is for a marketing promo called "Picture Yourself in a Lexus", where users upload their own faces into Lexus-related scenes. When finished, the user can flatten ("merge") the photo to share with friends.</p>
+        <p>My command line Java tool outputs the total number of users, scene views, photo uploads, photo shares, and other useful insights. It even offers view and download data on a per scene basis.</p>
+        <p>My next task was to compile this information with Facebook ad campaign data into a PDF report for the client. The final report offers extra insight into which models were the most popular, and which ads influenced app behavior.</p>
         <?php
         echo $this->Html->link('See Gallery', 'javascript:;', array(
             'class'=>'btn galleryExpand'
@@ -119,30 +124,47 @@
     </div>
     <div class = "gallery">
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
+        <?php //TODO: Put card blocks into an element ?>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ltdn-site/design-1.jpg');?>
+                <?php echo $this->Html->Image('projects/reporting/ad-results.jpg', array('alt' => 'Report - Ad Results'));?>
             </div>
             <div class = "desc">
-                <h4>Modern Entertainment</h4>
-                <p>This homepage design brings an exciting concert atmosphere to the site and engages with a hashtag cloud hero image.</p>
+                <h4>Top Performers and Ad Results</h4>
+                <p>At first glance, the client gets to see which car model scenes performed the best. Graphs underneath show demographic trends from the Facebook ads, broken down by campaign.</p>
             </div>
         </div>
+
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ltdn-site/design-2.jpg');?>
+                <?php echo $this->Html->Image('projects/reporting/popularity-and-insights.jpg', array('alt' => 'Report - Popularity and Insights'));?>
             </div>
             <div class = "desc">
-                <h4>Keeping it Classy</h4>
-                <p>Since the band's inception in 1968, Los Tigres del Norte have grown to become universally beloved members of the latin community. This vintage design pays homage to the group's norteño roots and western style.</p>
+                <h4>App Insights</h4>
+                <p>An in-depth look at scene popularity and app decisions offers detailed insight into how people are using the site.</p>
             </div>
         </div>
+
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/reporting/raw-data.jpg', array('alt' => 'Report - Raw Data'));?>
+            </div>
+            <div class = "desc">
+                <h4>Data Table</h4>
+                <p>A complete look at how each car model performed one month compared to the previous month.</p>
+            </div>
+        </div>
+
     </div>
+
 </div>
+
+
+
 
 <div class = "portfolio-item">
     <div class = "left-column">
-        <?php echo $this->Html->Image('projects/ff-labs/home-tilt.png'); ?>
+        <?php echo $this->Html->Image('projects/ff-labs/home-tilt.png', array('alt' => 'Flashfoto, Inc. Becomes Flashfoto Labs ')); ?>
     </div>
     <div class = "right-column">
         <h2>Rebranding of Flashfoto, Inc.</h2>
@@ -159,7 +181,7 @@
         <?php //TODO: Put card blocks into an element ?>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ff-labs/large/ff-logo.png');?>
+                <?php echo $this->Html->Image('projects/ff-labs/large/ff-logo.png', array('alt' => 'Flashfoto Labs - Hexagonal Logo'));?>
             </div>
             <div class = "desc">
                 <h4>Logo</h4>
@@ -169,7 +191,7 @@
 
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ff-labs/large/home.jpg');?>
+                <?php echo $this->Html->Image('projects/ff-labs/large/home.jpg', array('alt' => 'Flashfoto Labs - Homepage'));?>
             </div>
             <div class = "desc">
                 <h4>Home Screen</h4>
@@ -179,7 +201,7 @@
 
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ff-labs/large/solutions.jpg');?>
+                <?php echo $this->Html->Image('projects/ff-labs/large/solutions.jpg', array('alt' => 'Flashfoto Labs - Solutions'));?>
             </div>
             <div class = "desc">
                 <h4>Secondary Navigation</h4>
@@ -189,7 +211,7 @@
 
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/ff-labs/large/case-study.jpg');?>
+                <?php echo $this->Html->Image('projects/ff-labs/large/case-study.jpg', array('alt' => 'Flashfoto Labs - Case Study'));?>
             </div>
             <div class = "desc">
                 <h4>In-Depth</h4>
@@ -201,10 +223,49 @@
 
 </div>
 
+<div class = "portfolio-item">
+    <div class = "left-column">
+        <?php echo $this->Html->Image('projects/ltdn-site/ltdn-tilt.png', array('alt' => 'Los Tigres del Norte')); ?>
+    </div>
+    <div class = "right-column">
+        <h2>Los Tigres del Norte Band Site</h2>
+        <p>Task: Design a fresh, responsive website that includes the all-new Jefe de Jefes logo. Follow content guidelines to ensure compatibility with a pre-existing CMS.</p>
+        <p>Result: Delivered two unique designs for the band to choose from. The first is bold and modern, consisting of new-age typography including a hashtag cloud and vibrant gradient art. The second gives off a more traditional feel with vintage looks, real-life textures, and a natural color scheme.</p>
+        <p>This iconic latin band went with the latter option that represents the group's timelessness and universal appeal.</p>
+        <?php
+        echo $this->Html->link('See Gallery', 'javascript:;', array(
+            'class'=>'btn galleryExpand'
+        ));
+        ?>
+    </div>
+    <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/ltdn-site/design-1.jpg', array('alt' => 'Los Tigres del Norte - Modern Homepage Design'));?>
+            </div>
+            <div class = "desc">
+                <h4>Modern Entertainment</h4>
+                <p>This homepage design brings an exciting concert atmosphere to the site and engages with a hashtag cloud hero image.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/ltdn-site/design-2.jpg', array('alt' => 'Los Tigres del Norte - Traditional Elements Homepage Design'));?>
+            </div>
+            <div class = "desc">
+                <h4>Keeping it Classy</h4>
+                <p>Since the band's inception in 1968, Los Tigres del Norte have grown to become universally beloved members of the latin community. This vintage design pays homage to the group's norteño roots and western style.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div class = "portfolio-item">
     <div class = "left-column">
-        <?php echo $this->Html->Image('projects/tiger/tiger-tilt.png'); ?>
+        <?php echo $this->Html->Image('projects/tiger/tiger-tilt.png', array('alt' => 'Singing Tiger - Close up')); ?>
     </div>
     <div class = "right-column">
         <h2>Singing Tiger</h2>
@@ -220,7 +281,7 @@
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/tiger/line-art.jpg');?>
+                <?php echo $this->Html->Image('projects/tiger/line-art.jpg', array('alt' => 'Singing Tiger - Line Art'));?>
             </div>
             <div class = "desc">
                 <h4>Line Art</h4>
@@ -229,7 +290,7 @@
         </div>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/tiger/color.jpg');?>
+                <?php echo $this->Html->Image('projects/tiger/color.jpg', array('alt' => 'Singing Tiger - In Color'));?>
             </div>
             <div class = "desc">
                 <h4>Color Fields</h4>
@@ -238,7 +299,7 @@
         </div>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/tiger/sketch.jpg');?>
+                <?php echo $this->Html->Image('projects/tiger/sketch.jpg', array('alt' => 'Singing Tiger - Sketch'));?>
             </div>
             <div class = "desc">
                 <h4>Sketch</h4>
@@ -251,7 +312,7 @@
 
 <div class = "portfolio-item">
     <div class = "left-column">
-        <?php echo $this->Html->Image('projects/fotam/fotam-tilt.png'); ?>
+        <?php echo $this->Html->Image('projects/fotam/fotam-tilt.png', array('alt' => 'Fotam T-Shirt')); ?>
     </div>
     <div class = "right-column">
         <h2>Fotam T-Shirt Design</h2>
@@ -268,11 +329,11 @@
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
         <div class = "card">
             <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/fotam/fotam-tshirt.jpg');?>
+                <?php echo $this->Html->Image('projects/fotam/fotam-tshirt.jpg', array('alt' => 'Fotam T-Shirt Mockup'));?>
             </div>
             <div class = "desc">
-                <h4>Tshirt</h4>
-                <p>A Tshirt identifying us as part of the official crew.</p>
+                <h4>T-shirt</h4>
+                <p>A T-shirt identifying us as part of the official crew.</p>
             </div>
         </div>
     </div>

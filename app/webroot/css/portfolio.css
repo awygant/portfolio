@@ -22,7 +22,7 @@ body{
     background-color:rgba(29, 23, 45, 0.4);
 }
 
-.container{
+.container, .fullHeightContainer{
     -webkit-transition: -webkit-transform 0.4s ease;
     -moz-transition: -moz-transform 0.4s ease;
     transition: transform 0.4s ease;
@@ -408,6 +408,9 @@ a:hover{
 
 .info{
     color:#E55041;
+    background-color:rgba(229, 80, 65, 0.1);
+    padding:15px;
+    margin-top:0;
 }
 
 .infoGlyph{

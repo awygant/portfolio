@@ -1,20 +1,28 @@
 <?php echo $this->Html->script('hammer.min.js'); ?>
 <script>
-    $(function() {
-        $('#menuButton').on('click', function() {
-            $('#menu').toggleClass('slideLeft');
-            $('.container').toggleClass('slideLeft');
+    $(document).ready(function(){
+        var menuButton = $("#menuButton");
+        var menu = $("#menu");
+        var container = $(".container");
+        var fullHeightContainer = $(".fullHeightContainer");
+        $(function() {
+            menuButton.on('click', function() {
+                menu.toggleClass('slideLeft');
+                container.toggleClass('slideLeft');
+                fullHeightContainer.toggleClass('slideLeft');
+            });
+        });
+        var mc = new Hammer(document.body);
+        mc.on("swipeleft", function() {
+            if(!menu.hasClass("slideLeft"))
+                menuButton.click();
+        });
+        mc.on("swiperight", function() {
+            if(menu.hasClass("slideLeft"))
+                menuButton.click();
         });
     });
-    var mc = new Hammer(document.body);
-    mc.on("swipeleft", function() {
-        if(!$('#menu').hasClass("slideLeft"))
-            $('#menuButton').click();
-    });
-    mc.on("swiperight", function() {
-        if($('#menu').hasClass("slideLeft"))
-            $('#menuButton').trigger('click');
-    });
+
 </script>
 
 <div id="menuButton">
