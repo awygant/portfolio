@@ -327,7 +327,7 @@ a:hover{
     display:inline-block;
     margin-bottom:4px;
     cursor:pointer;
-    border:1px solid #e8e7ea;
+    border:1px solid #f8f8f8;
     vertical-align:top;
 }
 
@@ -352,8 +352,9 @@ a:hover{
 }
 
 .imgContainer{
-    max-height:250px;
+    height:250px;
     overflow:hidden;
+    background-color:#fff;
 }
 
 .imgContainer.expanded{
