@@ -58,8 +58,18 @@
     <div class = "right-column">
         <h2>Speedsters Snack Promo</h2>
         <p>Task: Distribute the all-new Speedsters snack brand among its target audience and generate social media buzz.</p>
-        <p>Result: Using the Flashfoto Image API, developed a custom branded application that allows users to picture themselves driving a sports car. When a user uploads a photo, the app automatically extracts the face and hair of its subject and places him or her in a fantasy driving scene.</p>
-        <p>The app keeps track of each photo's share numbers, so the photo with the highest virality is rewarded at the end of the contest.</p>
+        <p>Result: Developed a custom branded application that allows users to picture themselves in fantasy sports car scenes, with a prize for the most viral photo.</p>
+        <p>The application involves several steps:</p>
+        <ul>
+            <li>Upload the user's selfie to Flashfoto API</li>
+            <li>Receive the segmented face and hair result from Flashfoto API</li>
+            <li>Query a MySQL scenes database for a list of scenes and their mount data</li>
+            <li>Run custom logic to resize and mount the head to specific (x, y) coordinates between the background and foreground of the scene</li>
+            <li>Package the mount data as a JSON object and use Flashfoto API to flatten the image</li>
+            <li>Store the resulting image, along with user data, in the database</li>
+        </ul>
+        <p>Using the CakePHP MVC framework, I integrated Facebook sharing components, Flashfoto's REST API, and a MySQL database to deliver a reliable and dynamic experience.</p>
+
         <?php
          echo $this->Html->link('See Demo', 'http://staging-voting-1.fotam.com/', array(
             'class'=>'btn',
@@ -250,6 +260,15 @@
     </div>
     <div class = "gallery">
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/ltdn-site/jefe-de-jefes.jpg', array('alt' => 'Los Tigres del Norte - Jefe de Jefes Logo'));?>
+            </div>
+            <div class = "desc">
+                <h4>Jefe de Jefes Logo</h4>
+                <p>Given the nickname after the rise of their hit album Jefe de Jefes ("Boss of Bosses"), Los Tigres del Norte asked me to create a logo to be used on their website, in social media, and on merchandise.</p>
+            </div>
+        </div>
         <div class = "card">
             <div class = "imgContainer">
                 <?php echo $this->Html->Image('projects/ltdn-site/design-1.jpg', array('alt' => 'Los Tigres del Norte - Modern Homepage Design'));?>
