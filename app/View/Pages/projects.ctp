@@ -1,52 +1,12 @@
+<?php echo $this->Html->css('owl.carousel.css'); ?>
+<?php echo $this->Html->script('owl.carousel.min.js'); ?>
+<?php echo $this->Html->script('lightbox.js'); ?>
+<?php echo $this->Html->script('gallery.js'); ?>
 <script type = "text/javascript">
-    $(document).ready(function(){
-        var lightbox = $("#lightbox");
-        var lightboxImg = $("#lightboxImg");
-
-        $('.galleryExpand').click(function(){
-            $(this).parent().next('.gallery').slideToggle();
-            if($(this).html() == 'See Gallery'){
-                $(this).html('Collapse Gallery');
-            }
-            else{
-                $(this).html('See Gallery');
-            }
-        });
-        $('.card').click(function(){
-            i = $(this).find('img');
-            lightboxOpen(i.attr('src'));
-        });
-        $('.portfolio-item img').click(function(){
-            lightboxOpen($(this).attr('src'));
-        });
-        $(lightbox).click(function(){
-            lightboxClose();
-            window.history.back();
-        });
-        function lightboxOpen(imgsrc){
-            if(!$(lightbox).is(':visible')){
-                $(lightboxImg).attr('src', imgsrc);
-                $(lightbox).fadeIn('fast');
-                $('body').css('overflow', 'hidden');
-                window.history.pushState('null', null, '#');
-            }
-
-        }
-        function lightboxClose(){
-            $('body').css('overflow', 'auto');
-            $(lightboxImg).attr('src', '');
-            $(lightbox).fadeOut('fast');
-        }
-
-        if (window.history && window.history.pushState) {
-            $(window).on('popstate', function() {
-                lightboxClose();
-            });
-        }
+    $(document).ready(function() {
 
     });
 </script>
-
 <h1>Projects</h1>
 
 
@@ -372,6 +332,6 @@
 <div id = "lightbox">
     <div style = "position:static">
         <p class = "info"><span class = "infoGlyph"></span>Tap anywhere to close.</p>
-        <img id = "lightboxImg"/>
+        <div id = "lightboxImg" class = "owl-carousel"></div>
     </div>
 </div>
