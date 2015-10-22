@@ -2,11 +2,7 @@
 <?php echo $this->Html->script('owl.carousel.min.js'); ?>
 <?php echo $this->Html->script('lightbox.js'); ?>
 <?php echo $this->Html->script('gallery.js'); ?>
-<script type = "text/javascript">
-    $(document).ready(function() {
 
-    });
-</script>
 <h1>Projects</h1>
 
 
@@ -331,7 +327,7 @@
 
 <div id = "lightbox">
     <div style = "position:static">
-        <p class = "info"><span class = "infoGlyph"></span>Tap anywhere to close.</p>
+        <p class = "info"><span class = "infoGlyph"></span>Drag left/right to navigate. Tap anywhere to close.</p>
         <div id = "lightboxImg" class = "owl-carousel"></div>
     </div>
 </div>
