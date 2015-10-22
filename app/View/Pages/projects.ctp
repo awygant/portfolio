@@ -1,6 +1,5 @@
 <script type = "text/javascript">
     $(document).ready(function(){
-
         var lightbox = $("#lightbox");
         var lightboxImg = $("#lightboxImg");
 
@@ -18,20 +17,33 @@
             lightboxOpen(i.attr('src'));
         });
         $('.portfolio-item img').click(function(){
-            if(!$(lightbox).is(':visible')){
-                lightboxOpen($(this).attr('src'));
-            }
+            lightboxOpen($(this).attr('src'));
         });
         $(lightbox).click(function(){
-            $('body').css('overflow', 'auto');
-            $(lightboxImg).attr('src', '');
-            $(this).fadeOut('fast');
+            lightboxClose();
+            window.history.back();
         });
         function lightboxOpen(imgsrc){
-            $(lightboxImg).attr('src', imgsrc);
-            $(lightbox).fadeIn('fast');
-            $('body').css('overflow', 'hidden');
+            if(!$(lightbox).is(':visible')){
+                $(lightboxImg).attr('src', imgsrc);
+                $(lightbox).fadeIn('fast');
+                $('body').css('overflow', 'hidden');
+                window.history.pushState('null', null, '#');
+            }
+
         }
+        function lightboxClose(){
+            $('body').css('overflow', 'auto');
+            $(lightboxImg).attr('src', '');
+            $(lightbox).fadeOut('fast');
+        }
+
+        if (window.history && window.history.pushState) {
+            $(window).on('popstate', function() {
+                lightboxClose();
+            });
+        }
+
     });
 </script>
 
@@ -39,8 +51,6 @@
 
 
 <?php // TODO: Make portfolio-item an element, move all this stuff to a database? ?>
-
-
 <div class = "portfolio-item">
     <div class = "left-column">
         <?php echo $this->Html->Image('projects/speedsters/speedsters-tilt.png', array('alt' => 'Speedsters Ultimate Racer')); ?>
