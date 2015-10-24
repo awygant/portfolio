@@ -37,43 +37,68 @@
         ?>
     </div>
     <div class = "gallery">
+        <div class = "mockups">
+            <div class = "laptop">
+                <div>
+                    <?php echo $this->Html->Image('projects/speedsters/leaderboard.jpg', array('alt' => 'Speedsters Ultimate Racer - Leaderboard'));?>
+                </div>
+            </div>
+            <div class = "tablet">
+                <div>
+                    <?php echo $this->Html->Image('projects/speedsters/results.jpg', array('alt' => 'Speedsters Ultimate Racer - Photo Creation Results')); ?>
+                </div>
+            </div>
+            <div class = "phone">
+                <div>
+                    <?php echo $this->Html->Image('projects/speedsters/upload.jpg', array('alt' => 'Speedsters Ultimate Racer - Upload'));?>
+                </div>
+            </div>
+        </div>
+
+
+
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
-        <div class = "card">
-            <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/upload.jpg', array('alt' => 'Speedsters Ultimate Racer - Upload'));?>
+
+        <div>
+            <div class = "card">
+                <div class = "imgContainer">
+                    <?php echo $this->Html->Image('projects/speedsters/mockups/iphone-upload.jpg', array('alt' => 'Speedsters Ultimate Racer - Upload'));?>
+                </div>
+                <div class = "desc">
+                    <h4>Upload Interface</h4>
+                    <p>This app implements several methods from Flashfoto's API, starting with a photo upload.</p>
+                </div>
             </div>
-            <div class = "desc">
-                <h4>Upload Interface</h4>
-                <p>This app implements several methods from Flashfoto's API, starting with a photo upload.</p>
+            <div class = "card">
+                <div class = "imgContainer">
+                    <?php echo $this->Html->Image('projects/speedsters/mockups/macbook-leaderboard.jpg', array('alt' => 'Speedsters Ultimate Racer - Leaderboard'));?>
+                </div>
+                <div class = "desc">
+                    <h4>It's a Race to the Top!</h4>
+                    <p>The leaderboard shows the top ten leaders in the photo sharing contest.</p>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "imgContainer">
+                    <?php echo $this->Html->Image('projects/speedsters/mockups/ipad-results.jpg', array('alt' => 'Speedsters Ultimate Racer - View Photo Creations'));?>
+                </div>
+                <div class = "desc">
+                    <h4>Fantasy Scenes</h4>
+                    <p>Once the user picks their favorite photo, he or she can share to Facebook to enter the sweepstakes.</p>
+                </div>
+            </div>
+            <div class = "card">
+                <div class = "imgContainer">
+                    <?php echo $this->Html->Image('projects/speedsters/custom-icons.jpg', array('alt' => 'Speedsters Ultimate Racer - Custom Iconography'));?>
+                </div>
+                <div class = "desc">
+                    <h4>Custom Icons</h4>
+                    <p>A custom icon set I made to assist instruction text on the upload page.</p>
+                </div>
             </div>
         </div>
-        <div class = "card">
-            <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/results.jpg', array('alt' => 'Speedsters Ultimate Racer - Photo Results'));?>
-            </div>
-            <div class = "desc">
-                <h4>Automatic Photo Creations</h4>
-                <p>The API extracts the user's face and hair from the photo. The app uses this data and places the head into fun racing scenes pulled from an external database.</p>
-            </div>
-        </div>
-        <div class = "card">
-            <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/view.jpg', array('alt' => 'Speedsters Ultimate Racer - View Photo Creation'));?>
-            </div>
-            <div class = "desc">
-                <h4>Incentivized Sharing</h4>
-                <p>Once the user picks their favorite photo, he or she can share to Facebook to enter the sweepstakes.</p>
-            </div>
-        </div>
-        <div class = "card">
-            <div class = "imgContainer">
-                <?php echo $this->Html->Image('projects/speedsters/leaderboard.jpg', array('alt' => 'Speedsters Ultimate Racer - Leaderboard'));?>
-            </div>
-            <div class = "desc">
-                <h4>It's a Race to the Top!</h4>
-                <p>The leaderboard shows the top ten leaders in the photo sharing contest.</p>
-            </div>
-        </div>
+
+
 
     </div>
 </div>

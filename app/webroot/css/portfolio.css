@@ -339,6 +339,11 @@ a:hover{
 .card img{
     background-color:#fff;
     max-width:100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 
@@ -424,4 +429,66 @@ a:hover{
     width:15px;
     display:inline-block;
     margin-right:10px;
+}
+
+.phone, .tablet, .laptop{
+    background-size:contain;
+    background-repeat:no-repeat;
+    overflow: scroll;
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.phone div, .tablet div, .laptop div{
+    max-width:100%;
+    overflow:scroll;
+    font-size:0; /* Get rid of those pesky gaps at the bottom */
+    border-bottom-radius:2px;
+}
+
+.phone div img, .tablet div img, .laptop div img{
+    max-width:100%;
+}
+
+.laptop{
+    background-image:url('../img/projects/macbook-frame.png');
+    width:457px;
+    height:301px;
+    padding:20px 73px 51px 73px;
+}
+
+.laptop div{
+    height:289px;
+}
+
+.phone{
+    background-image:url('../img/projects/iphone-frame.png');
+    height:202px;
+    width:111px;
+    padding:38px 7px 57px 7px;
+    margin-bottom:-27px;
+    margin-left:-316px;
+}
+
+.phone div{
+    height:188px;
+}
+
+.tablet{
+    background-image:url('../img/projects/ipad-frame.png');
+    width:200px;
+    height:292px;
+    padding:37px 14px 42px 14px;
+    margin-bottom:-26px;
+}
+
+.tablet div{
+    height:258px;
+}
+
+@media(max-width:980px){
+    /* TODO: use scale for these things */
+    .mockups{
+        display:none
+    }
 }
