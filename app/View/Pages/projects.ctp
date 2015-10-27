@@ -55,8 +55,6 @@
             </div>
         </div>
 
-
-
         <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
 
         <div>
@@ -103,6 +101,54 @@
     </div>
 </div>
 
+
+
+<div class = "portfolio-item">
+    <div class = "left-column">
+        <?php echo $this->Html->Image('projects/wireframes/wireframes-tilt.png', array('alt' => 'Beautiful, detailed mockups.')); ?>
+    </div>
+    <div class = "right-column">
+        <h2>Detailed Mockups and Wireframe Documentation</h2>
+        <p>Task: Design a location-based interactive events application. Specify all functionality in the wireframe document.</p>
+        <p>Result: I created a pixel-perfect mobile first interface that leads the user to the end goal of contributing a photo for a particular event space. I wrapped the interface design in a comprehensive and detailed PDF outlining button functionality, specific interactions, menu behavior, and more.</p>
+        <?php
+        echo $this->Html->link('See Gallery', 'javascript:;', array(
+            'class'=>'btn galleryExpand'
+        ));
+        ?>
+    </div>
+    <div class = "gallery">
+        <p class = "info"><span class = "infoGlyph"></span>Click on any photo.</p>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/wireframes/interface-flow.jpg', array('alt' => 'Interface Flow Diagram')); ?>
+            </div>
+            <div class = "desc">
+                <h4>Interface Flow</h4>
+                <p>This diagram shows the path of typical application use cases, including failure cases.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/wireframes/detailed-interface-description.jpg', array('alt' => 'Interface Mockups and Detailed Descriptions')); ?>
+            </div>
+            <div class = "desc">
+                <h4>Interface Descriptions</h4>
+                <p>An example of the level of detail to expect from my wireframes.</p>
+            </div>
+        </div>
+        <div class = "card">
+            <div class = "imgContainer">
+                <?php echo $this->Html->Image('projects/wireframes/menu-contexts.jpg', array('alt' => 'User Menu in Different Contexts')); ?>
+            </div>
+            <div class = "desc">
+                <h4>Accounting for Context</h4>
+                <p>All user scenarios are accounted for and reflected in the menu option documentation.</p>
+            </div>
+        </div>
+        <?php echo $this->Html->link('Download Full Wireframe Docs', array('action' => 'download', 'Anna_Wygant_Wireframe_Sample.pdf'), array('class' => 'btn')); ?>
+    </div>
+</div>
 
 
 

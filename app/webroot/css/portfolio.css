@@ -84,7 +84,8 @@ a:hover{
     background-size:200px auto;
     background-position:center bottom;
     background-repeat:no-repeat;
-    height:150px;
+    height:90px;
+    margin-top:60px;
     width:100%;
 }
 
@@ -202,10 +203,11 @@ a:hover{
 
 #menuButton{
     width:25px;
-    height:25px;
+    height:30px;
     position:fixed;
-    top:16px;
-    right:16px;
+    top:0;
+    right:0;
+    padding:15px;
     z-index:3;
     cursor:pointer;
 
@@ -253,6 +255,7 @@ a:hover{
 
 #menu .topLogo{
     height:50px;
+    margin-top:0;
     background-size:auto 70%;
 }
 

@@ -105,8 +105,8 @@ class PagesController extends AppController {
         $this->layout = 'page';
     }
 
-    public function download(){
-        $this->response->file(WWW_ROOT.'files/resume.pdf', array('download' => true, 'name' => 'Anna_Wygant.pdf'));
+    public function download($filename){
+        $this->response->file(WWW_ROOT.'files/' . $filename, array('download' => true, 'name' => $filename));
         return $this->response;
     }
 

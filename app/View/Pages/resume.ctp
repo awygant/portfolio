@@ -1,5 +1,5 @@
 <h1>Résumé</h1>
-<div class = "text-center"><?php echo $this->Html->link('Download PDF', array('action' => 'download'), array('class' => 'btn')); ?></div>
+<div class = "text-center"><?php echo $this->Html->link('Download PDF', array('action' => 'download', 'Anna_Wygant.pdf'), array('class' => 'btn')); ?></div>
 <div class = "left-half">
     <h3>Professional Experience</h3>
     <h4>Creative Developer, Flashfoto, Inc.</h4>
