@@ -23,7 +23,7 @@
 <div class = "right-half">
     <h3>Volunteer Experience</h3>
 
-    <h4>Social Media Director, Los Gatos Saferides</h4>
+    <h4>Social Media Mentor, Los Gatos Saferides</h4>
     <p>August 2013 - June 2015. Los Gatos, CA</p>
     <p>About the Organizataion: Los Gatos SafeRides is an organization dedicated to helping high school students make responsible decisions. Any student who finds him or herself stranded on a Friday night can call the SafeRides hotline for a free ride home, no questions asked.</p>
     <p>Duties & Responsibilities: Mentored student board members who are committed to promoting the Los Gatos SafeRides organization online via Social Media. Frequently volunteered Friday nights as a SafeRides driver.</p>

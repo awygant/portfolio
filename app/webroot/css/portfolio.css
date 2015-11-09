@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,500);
 
 html, body, .fullHeightContainer{
     height:100%;
@@ -14,7 +14,7 @@ body{
     background-position:center top;
     background-attachment:fixed;
     font-family: 'Raleway', sans-serif;
-    font-weight:100;
+    font-weight:200;
 }
 
 .fullHeightContainer{
@@ -44,7 +44,7 @@ h3{
     text-transform:uppercase;
     letter-spacing:2px;
     font-size:14pt;
-    font-weight:100;
+    font-weight:200;
     padding:25px 0 10px 0;
 }
 
@@ -57,6 +57,11 @@ a{
     text-decoration:none;
     color:#E55041;
     transition: opacity 0.3s;
+    background-color:rgba(229, 80, 65, 0.1);
+}
+
+a.unstyled{
+    background:none;
 }
 
 a:hover{
@@ -121,7 +126,8 @@ a:hover{
     text-decoration:none;
     display:inline-block;
     min-width:60px;
-    transition: all 0.3s
+    transition: all 0.3s;
+    background:none;
 }
 
 .homeLogo a:hover{
@@ -164,7 +170,8 @@ a:hover{
 
 
 .contact{
-    background-color:#e8e7ea;
+    /*background-color:#e8e7ea;*/
+    background-color:rgba(255,255,255,0.9);
     padding:30px;
 }
 
@@ -272,7 +279,7 @@ a:hover{
     width:100%;
     margin-bottom:5px;
     line-height:80px;
-    transition: all 0.3s
+
 }
 
 #menu ul li a{
@@ -282,10 +289,13 @@ a:hover{
     text-decoration:none;
     text-align:center;
     color:#fff;
+    transition: all 0.5s;
+    background-color:rgba(255,255,255,0.0);
 }
 
-#menu ul li:hover{
-    background-color:rgba(255,255,255,0.2);
+#menu ul li a:hover{
+    background-color:rgba(229, 80, 65, 0.1);
+    opacity:1;
 }
 
 .slideLeft{

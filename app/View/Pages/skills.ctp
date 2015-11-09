@@ -23,7 +23,7 @@
         <h2>Full Stack Knowledge</h2>
         <p>I learned programming the hard way - from scratch. While frameworks and plugins are useful time savers, they aren't exactly my crutch. </p>
         <p>This means I can take charge of a project from apache configuration to final UI behavior tweaks.</p>
-        <p>Need to program with tr's and td's for an incredibly outdated environment? I've got you covered. Got a tricky bug that just keeps getting away from you? I'll hunt through layers of web development to find where things went wrong.</p>
+        <p>Need to program with tr's and td's for an incredibly outdated environments? I've got you covered. Got a tricky bug that just keeps getting away from you? I'll hunt through layers of web development to find where things went wrong.</p>
     </div>
 </div>
 
@@ -41,7 +41,7 @@
     <div class = "left-column"><?php echo $this->Html->Image("skills/html-css.png", array('alt' => 'I\'m fluent in HTML, CSS, Javascript, and many JS libraries.')); ?></div>
     <div class = "right-column">
         <h2>Modern Web Standards</h2>
-        <p>I keep an eye on web trends and the latest SEO practices so my sites don't get left in the dust. </p><p>I jump at the opportunity to work with brand new features and meet the challenge to implement them in a responsive, backwards-compatible environment.</p>
+        <p>I keep an eye on web trends and the latest SEO practices so my sites don't get left in the dust. </p><p>I jump at the opportunity to work with brand new features and meet the challenge to implement them in a responsive, progressive environment.</p>
     </div>
 </div>
 
@@ -51,7 +51,7 @@
     <div class = "right-column">
         <h2>Marketing & Analytics</h2>
         <p>I've worked with large social media campaigns to harvest data from and deliver content to millions of users. I'm on the bleeding edge of online personalization tech. I contributed to the world's first one-to-one photo-immersive advertising network.</p>
-        <p>I possess the highly sought-after ability to navigate the Facebook Analytics interface and make sense of data from large campaigns. Or, give me a log file from one of your sites and I'll write custom reporting software.</p>
+        <p>I possess a fine-tuned mastery of Facebook Analytics and the skills to convert large campaign data into readable insights. Or, give me a log file from any of your sites and I'll write custom reporting software that gives you the exact details you need.</p>
     </div>
 </div>
 
